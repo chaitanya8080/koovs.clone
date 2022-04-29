@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <script
+      src="https://kit.fontawesome.com/dfa13a6531.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/display.css" />
+    <link rel="stylesheet" href="./footer/footer.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- /* .............header...... */ -->
+    <div id="main">
+      <a href="index.html"
+        ><img
+          id="logo"
+          src="https://cdn.shopify.com/s/files/1/0584/9399/3141/files/logo_240x.png?v=1627043663"
+      /></a>
+      <div id="icon">
+        <a href=""><i class="fas fa-search"></i></a>
+        <a href="signin.html"><i class="far fa-user-circle"></i></a>
+        <a href=""><i class="far fa-heart"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+      </div>
+    </div>
+    <div id="nav1">
+      <a href="product.html"><p1 id="txt">MEN</p1></a>
+      <a href=""><p1 id="txt">WOMEN</p1></a>
+      <a href=""><p1 id="txt">THE BLOG</p1></a>
+      <a href=""><p1 id="txt">KOOVSXYOU</p1></a>
+      <a href=""><p1 id="txt">IN STYLE OF</p1></a>
+    </div>
+    <!-- .............header......  -->
+    <div id="container">
+      <div id="left"></div>
+      <div id="right">
+        <h1></h1>
+        <p></p>
+        <div id="rate">
+          <h1></h1>
+          <p></p>
+          <h3></h3>
+        </div>
+        <p>
+          or 4 interest-free payments of <b>₹ 179.75</b> with
+          <img
+            src="https://cdn.sezzle.in/branding/2.0/Sezzle_Logo_FullColor.svg"
+            id="sez"
+          />
+          ⓘ
+        </p>
+        <p>tax included.</p>
+        <div id="social">
+          <img
+            src="https://cdn.icon-icons.com/icons2/1488/PNG/128/5293-facebook_102565.png"
+            alt=""
+          />
+          <img
+            src="https://cdn.icon-icons.com/icons2/122/PNG/128/twitter_socialnetwork_20007.png"
+            alt=""
+          />
+          <img
+            src="https://cdn.icon-icons.com/icons2/840/PNG/128/Whatsapp_icon-icons.com_66931.png"
+            alt=""
+          />
+        </div>
+
+        <b>SIZE:<span id="sh_size"></span></b>
+        <div id="size">
+          <div id="box"><h3>S</h3></div>
+          <div id="box"><h3>M</h3></div>
+          <div id="box"><h3>L</h3></div>
+          <div id="box"><h3>XL</h3></div>
+        </div>
+        <span
+          ><strong>COLOR:<span id="C_lor"></span></strong>
+        </span>
+        <div id="clropt"></div>
+        <div id="butn">
+          <button id="btn1" onclick="add_to()">BUY IT NOW</button>
+          <button id="btn2" onclick="addd()">ADD TO CART</button>
+          <button id="btn3">
+            <img
+              src="https://cdn.icon-icons.com/icons2/931/PNG/128/heart_love_fav_favourite_icon-icons.com_72394.png"
+              alt=""
+            />
+          </button>
+          <div id="off">
+            <h1>OFFER</h1>
+            <p>
+              Get <b style="color: red"> 5% instant discount </b> on all prepaid
+              orders. Use Code <b style="color: red">PREPAID.</b> <br />
+              Offer applicable over and above promotional T&C
+            </p>
+          </div>
+          <p><b>Availability</b>:In Stock</p>
+        </div>
+      </div>
+      <div id="leftBottom">
+        <h1>Product Details</h1>
+        <div id="p_box">
+          <div id="opt">
+            <button id="btn1" onclick="func()">Info & care</button>
+            <button id="btn2" onclick="funca()">Delivery & Return</button>
+            <button id="btn3" onclick="funcb()">Seller Details</button>
+          </div>
+        </div>
+        <div id="show_details">
+          <p><b>Product ID :</b> 138466</p>
+
+          <p><b>Line ID :</b>155457</p>
+
+          <p><b>Material/Fabric :</b>100% Cotton</p>
+
+          <p>
+            <b>Size & Fit :</b>This brand runs true to size. To ensure the best
+            fit, we suggest consulting the size chart.
+          </p>
+          <p><b>Casual Shirt</b> by <b>BLUE SAINT</b></p>
+
+          <ul>
+            <li>Made from cotton</li>
+            <li>Mandarin collar</li>
+            <li>Button-down closure</li>
+            <li>Welt pocket front</li>
+            <li>Long sleeves</li>
+            <li>Curved hem</li>
+            <li>Slim fit</li>
+          </ul>
+        </div>
+        <div id="del_ret">
+          <p><b>General Policy :</b></p>
+
+          <p>
+            We accept return & exchange within 15 days post order delivery.<br /><br />
+
+            To get expected delivery date, please enter pin code in delivery
+            information section.<br /><br />
+
+            Free shipping across all products on a minimum purchase of Rs
+            999.<br /><br />
+
+            ----------------------------------
+          </p>
+          <p><b>No Return No Refund Policy:</b></p>
+
+          <p>
+            Certain product which are sold at high promotional prices do not
+            qualify for refund or exchange.<br /><br />
+
+            Such products are marked under " No return | No refund".<br /><br />
+
+            Placing order would be considered as accepting to the terms and
+            conditions of the No return No<br />
+            return policy
+          </p>
+        </div>
+        <div id="sellerdet">
+          <p><b>Net Qty :</b> 1</p>
+
+          <p><b>Commodity :</b></p>
+
+          <p><b>Country of Origin :</b>India</p>
+
+          <p><b>Manufactured By :</b> by BLUE SAINT</p>
+          <p>
+            <b>Manufactured Address :</b> Raised On Denim, Unit-1 Survey no.
+            63/3, Bangalore
+          </p>
+
+          <p>
+            <b>Customer Care :</b>Unit 1 Survey No.63/3 Ward No.14, no144/1
+            Kodichikkanahalli Main Road Begur, Hobli, Bommanahalli, Bengaluru,
+            Karnataka 560068. Email Support: care@k2retail.in
+          </p>
+        </div>
+      </div>
+      <div id="rigthBottom">
+        <h1 id="dd">Delivery Option</h1>
+        <div id="outB">
+          <div id="d_opt">
+            <b>Pincode</b>
+
+            <div id="pin">
+              <input type="text" placeholder="Postal code e.g. 414001" />
+              <button>Check</button>
+            </div>
+            <p id="del">The Product maybe applicable for free Delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="like"><h1>You may also like</h1></div>
+    <div id="grab">
+      <img id="bg" src="./images/btimg.jpg" width="100%" />
+    </div>
+
+    <!-- ......................footer.................. -->
+
+    <div class="foot">
+      <div class="foot-column">
+        <ul>
+          <li><label class="head">TOP CATEGORIES</label></li>
+          <li>Dresses for Girls</li>
+          <li>Maxi Dresses</li>
+          <li>Tops for Girls</li>
+          <li>Women Jumpsuits</li>
+          <li>Dungarees Dress</li>
+          <li>Innerwear for Men</li>
+          <li>Leggings</li>
+          <li>Ladies Bags</li>
+          <li>Women Shoes</li>
+          <li>Trousers & Chinos</li>
+          <li>Men Bags</li>
+        </ul>
+      </div>
+      <div class="foot-column">
+        <ul>
+          <li><label class="head"> CATEGORIES </label></li>
+          <li>Hoodies & Sweatshirts</li>
+          <li>Jog Pants</li>
+          <li>Vests</li>
+          <li>Polo Shirts</li>
+          <li>T Shirts</li>
+          <li>Shoes for Men</li>
+          <li>Ripped Jeans</li>
+          <li>Jeans for Girls</li>
+          <li>Denim shirts</li>
+          <li>Sling Bags</li>
+        </ul>
+      </div>
+      <div class="foot-column">
+        <ul>
+          <li><label class="head">TOP BRANDS</label></li>
+          <li>Nike</li>
+          <li>New Look</li>
+          <li>Only</li>
+          <li>Vero Moda</li>
+          <li>Femella</li>
+          <li>Ax Paris</li>
+          <li>Cover Story</li>
+          <li>Catwalk88</li>
+          <li>Being Human</li>
+          <li>Levis</li>
+        </ul>
+      </div>
+      <div class="foot-column">
+        <ul>
+          <li><label class="head">BRANDS</label></li>
+          <li>Adidas Neo</li>
+          <li>Jack & Jones</li>
+          <li>Spring Break</li>
+          <li>Flying Machine</li>
+          <li>Adidas Originals</li>
+          <li>Koovs</li>
+          <li>Adidas Shoes</li>
+          <li>Blue Saint</li>
+          <li>Koovs Coupons & Offers</li>
+        </ul>
+      </div>
+      <div class="foot-column">
+        <ul>
+          <li><label class="head">NEED HELP?</label></li>
+          <li>Contact Us</li>
+          <li>Returns Policy</li>
+          <li>Shipping Information</li>
+          <li>FAQs</li>
+          <li>Terms and Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="foot-column" id="head">
+        <ul>
+          <li><label class="head">CONTACT US</label></li>
+          <li class="mail">care@k2retail.in</li>
+
+          <div
+            class="social-icons"
+            style="display: flex; gap: 15px; margin-top: 20px"
+          >
+            <a href="https://www.facebook.com/koovs" target="_blank"
+              ><img
+                src="./images/facebook-f-brands.svg"
+                alt="facebook"
+                style="width: 12px"
+            /></a>
+            <a href="https://twitter.com/mykoovs" target="_blank"
+              ><img
+                src="./images/twitter.svg"
+                alt="facebook"
+                style="width: 18px"
+            /></a>
+            <a href="https://www.instagram.com/koovsfashion/" target="_blank"
+              ><img src="./images/insta.svg" alt="facebook" style="width: 18px"
+            /></a>
+            <a href="https://www.youtube.com/user/Koovsdotcom" target="_blank"
+              ><img
+                src="./images/youtube-brands.svg"
+                alt="facebook"
+                style="width: 18px"
+            /></a>
+          </div>
+
+          <div class="app-store">
+            <a
+              href="https://apps.apple.com/in/app/koovs-online-shopping-app/id913080723"
+              target="_blank"
+              ><img src="./images/app-store-3x.png" alt="apple store"
+            /></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.koovs.fashion"
+              target="_blank"
+              ><img src="./images/google-play-3x.png" alt="play store"
+            /></a>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="base-footer">
+      <span>KOOVS.COM © 2022 | All rights reserved.</span>
+    </div>
+  </body>
+</html>
+<script src="./scripts/display.js"></script>

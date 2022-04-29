@@ -1,0 +1,176 @@
+.Shirtsmen{
+    width: 100%;
+    height: 65px;
+    background-color:#f6f6f8 ;
+    border: 1px solid red;
+    text-align: center
+}
+.Shirtsmen p{
+    font-size: 20px;
+  font-family: poppins;
+    line-height: 26px;
+    font-weight: 600;
+}
+.sort{
+    background: transparent;
+    text-decoration: none;
+    width: 95%;
+    height: 50px;
+   display: flex;
+justify-content: space-between;
+padding: 10px;
+text-align: center;
+}
+#container{
+    display: flex;
+}
+#container .filters{
+  width: 27%;
+  height: 550px;
+  border: 1px solid transparent;
+ /* position: -webkit-sticky; */
+  top: 150px;
+  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#container .grid{
+    width: 72%;
+     margin-left: 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    border: 1px solid transparent;
+    background: white;
+}
+.grid>div{
+    border: 1px solid transparent;
+    height: 450px;
+}
+.grid img{
+    width: 100%;
+    height: 73%;
+   
+}
+.grid p{
+    margin: 4px;
+}
+.grid p:nth-child(4){
+    color: red;
+}
+.grid p:nth-child(3){
+    color:#b3b3b3 ;
+    font-size: 12px;
+   
+}
+.grid p:nth-child(5){
+    text-decoration: line-through;
+    color: #676565;
+}
+
+.grid .circleimage{
+    height: 30px;
+    width: 30px;
+    border-radius: 17px;
+    border: 1px solid lightslategray;
+    margin-top: 10px;
+}
+.filters{
+  padding: 25px;
+}
+.filters .chSize{
+    width: 20px;
+   height: 15px;
+}
+.filters .chSize:hover{
+  cursor: pointer;
+}
+.filters span:hover{
+  cursor: pointer;
+}
+.filters .black{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: black;
+   border: none;
+   margin: 15px;
+}
+.filters .red{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: red;
+   border: none;
+   margin: 15px;
+}
+.filters .blue{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: blue;
+   border: none;
+   margin: 15px;
+}
+.filters .grey{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: grey;
+   border: none;
+   margin: 15px;
+}
+.filters .indigo{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: indigo;
+   border: none;
+   margin: 15px;
+}
+.filters .orange{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: orange;
+   border: none;
+   margin: 15px;
+}
+.filters .green{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: green;
+   border: none;
+   margin: 15px;
+}
+.filters .khaki{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: khaki;
+   border: none;
+   margin: 15px;
+}
+.filters .brown{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color: brown;
+   border: none;
+   margin: 15px;
+}
+.filters .yellow{
+ height: 25px;
+ width: 25px;
+   border-radius: 25px;
+   background-color:yellow;
+   border: none;
+   margin: 15px;
+}
+.filters button{
+  cursor: pointer;
+}
+.sizeFilter button{
+  border: none;
+  background:white;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/checkout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div id="kooImg">
+          <img src="./images/koovs logo.jpg" alt="logo" />
+        </div>
+        <div class="insidel">
+          <div id="pages">
+            <p>
+              <a href="./cart.html">Cart</a> >
+              <a href="./checkout.html"
+                ><strong style="color: black">Information</strong></a
+              >
+              > <a href="./shipping.html">Shipping</a> >
+              <a href="./payment.html">Payment</a>
+            </p>
+          </div>
+          <p id="cont">Contact information</p>
+          <div style="display: flex">
+            <img
+              src="./images/Screenshot (262).png"
+              alt="id"
+              style="width: 50px"
+            />
+            <span style="font-size: 12px; margin-top: 5px; margin-left: 10px"
+              >Chandan (chandankrbit3@gmail.com)</span
+            >
+          </div>
+
+          <div style="margin-top: 25px; margin-bottom: 10px">
+            shipping address
+          </div>
+          <div class="bottomvar">
+            <select name="" id="Email" style="grid-area: Email">
+              <option value="india">India</option>
+            </select>
+            <input
+              id="Fname"
+              placeholder="First Name"
+              style="grid-area: Fname"
+            />
+            <input
+              id="Lname"
+              placeholder="Last Name"
+              style="grid-area: Lname"
+            />
+            <input
+              id="comp"
+              placeholder="Company(optional)"
+              style="grid-area: comp"
+            />
+            <input
+              id="Address"
+              placeholder="Address"
+              style="grid-area: Address"
+            />
+            <input
+              id="Add2"
+              placeholder="Address 2 (Optonal)"
+              style="grid-area: Add2"
+            />
+            <input
+              id="PC"
+              placeholder="Postal Code"
+              style="grid-area: PC"
+              type="number"
+            />
+            <input id="City" placeholder="City" style="grid-area: City" />
+
+            <select id="Region" style="grid-area: Region">
+              <option value="">State</option>
+              <option value="">Jharkhand</option>
+              <option value="">Bihar</option>
+              <option value="">Uttar Pradesh</option>
+              <option value="">Chattishgard</option>
+              <option value="">Odissa</option>
+              <option value="">Hydrabad</option>
+              <option value="">Banglore</option>
+              <option value="">Goa</option>
+              <option value="">Maharastra</option>
+              <option value="">Gujrat</option>
+              <option value="">Jammu & Kashmir</option>
+              <option value="">Laddak</option>
+              <option value="">Punjab</option>
+              <option value="">Haryana</option>
+              <option value="">Madhya prasesh</option>
+            </select>
+            <input
+              id="Phone"
+              placeholder="Phone"
+              style="grid-area: Phone"
+              type="number"
+            />
+          </div>
+          <input type="checkbox" style="position: relative; top: 3px" />
+          <span style="font-size: 12px">Text me with news and offers</span>
+          <div id="butts">
+            <a href="./cart.html"
+              ><p style="position: relative; top: 30px">Return to cart</p></a
+            >
+            <button id="gotoship">Continue to Shipping</button>
+          </div>
+          <div id="reserve">
+            <div>All rights reserved Koovs</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inside">
+          <div class="prod"></div>
+          <hr />
+          <div id="discount">
+            <input
+              id="coupon-input"
+              type="text"
+              placeholder="Gift card or discount card"
+            />
+            <button id="couponBtn">Apply</button>
+          </div>
+          <p style="font-size: 12px" id="error"></p>
+          <hr />
+          <div style="display: flex; justify-content: space-between">
+            <div>Subtotal</div>
+            <div id="sum"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <div>Discount</div>
+            <div id="dis">₹ 0</div>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <div>Shipping</div>
+            <div>₹99</div>
+          </div>
+          <hr />
+          <div style="display: flex; justify-content: space-between">
+            <div style="margin-top: 10px">Total</div>
+            <div id="net"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/checkout.js"></script>

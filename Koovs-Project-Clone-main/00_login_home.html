@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/dfa13a6531.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/home.css" />
+</head>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .parent {
+    width: 40%;
+    height: 350px;
+    border: 1px solid rgba(99, 99, 99, 0.2);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .childParent {
+    width: 50%;
+    height: 90%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .loginSetcion {
+    width: 150px;
+    height: 47px;
+    background-color: rgb(59, 59, 59);
+    border: rgb(59, 59, 59);
+  }
+
+  .loginSetcion>a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* popup  */
+  .popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #popup-otp {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    height: 250px;
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .popup-content-otp {
+    height: 300px;
+    width: 550px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+  }
+
+  /* number section  */
+  .parentLogin {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .first {
+    width: 30%;
+    height: 30.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    margin-left: -22px;
+  }
+
+  .first-otp {
+    width: 30%;
+    height: 30.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgb(165, 165, 165);
+  }
+
+  .s {
+    width: 5%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .s2 {
+    font-size: 10px;
+  }
+
+  .orange {
+    width: 15px;
+
+    height: 10%;
+    background-color: orange;
+  }
+
+  .white {
+    width: 15px;
+    height: 10%;
+    background-color: white;
+  }
+
+  .green {
+    width: 15px;
+
+    height: 10%;
+    background-color: green;
+  }
+
+  .circle {
+    width: 10%;
+    height: 50%;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: green;
+    margin: auto;
+  }
+
+  .second {
+    width: 70%;
+    height: 100%;
+  }
+
+  .second-otp {
+    width: 70%;
+    height: 100%;
+    margin-left: 80px;
+  }
+
+  .btnLogin {
+    margin: 10px;
+  }
+
+  #next {
+    width: 150px;
+    height: 36px;
+    font-size: 20px;
+    background-color: rgb(255, 136, 0);
+    border: rgb(255, 153, 0);
+    color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+  }
+
+  #verify {
+    width: 150px;
+    height: 36px;
+    font-size: 20px;
+    background-color: rgb(255, 136, 0);
+    border: rgb(255, 153, 0);
+    color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+  }
+
+  .close {
+    width: 30px;
+    position: absolute;
+    top: -16px;
+    right: -14px;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 30px;
+  }
+
+  .close-otp {
+    width: 30px;
+    position: absolute;
+    top: -16px;
+    right: -14px;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 30px;
+  }
+
+  #login_number {
+    height: 26px;
+    width: 250px;
+  }
+
+  .otpNum {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<body>
+  <!-- hearder -->
+  <div id="main">
+    <a href="index.html"><img id="logo"
+        src="https://cdn.shopify.com/s/files/1/0584/9399/3141/files/logo_240x.png?v=1627043663" /></a>
+    <div id="icon">
+      <a href=""><i class="fas fa-search"></i></a>
+      <a href="signin.html"><i class="far fa-user-circle"></i></a>
+      <a href=""><i class="far fa-heart"></i></a>
+      <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+    </div>
+  </div>
+  <div id="nav1">
+    <a href="product.html">
+      <p1 id="txt">MEN</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">WOMEN</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">THE BLOG</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">KOOVSXYOU</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">IN STYLE OF</p1>
+    </a>
+  </div>
+  <div class="parent">
+    <div class="childParent">
+      <h2>Sign In or Sign Up</h2>
+      <hr />
+      <h4>ARE YOU EXISTING CUSTOMER?</h4>
+      <button class="loginSetcion" id="loginBtnToLog">
+        <a href="#">Login With Mobile</a>
+      </button>
+      <hr />
+      <h4>ARE YOU NEW CUSTOMER?</h4>
+      <button class="loginSetcion">
+        <a href="01_createAccount.html">Create Account</a>
+      </button>
+    </div>
+  </div>
+  <!-- pop up  -->
+  <div class="popup">
+    <div class="popup-content">
+      <h2>OTP VERIFICATION</h2>
+      <hr />
+      <h3>Enter Your Contact Number To Login</h3>
+
+      <i class="fas fa-times close"></i>
+      <div class="parentLogin">
+        <div class="first">
+          <div class="s">
+            <div class="orange"></div>
+            <div class="white">
+              <div class="circle"></div>
+            </div>
+            <div class="green"></div>
+          </div>
+          <div class="s2">+91</div>
+        </div>
+        <div class="second">
+          <input type="text" placeholder="Enter Your Number" id="login_number" />
+          <div class="btnLogin"><button id="next">NEXT</button></div>
+          <h3 id="otp_message"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- otp section   -->
+  <div id="popup-otp">
+    <div class="popup-content-otp">
+      <h2>OTP VERIFICATION</h2>
+      <hr />
+      <h3>Enter You OTP Here</h3>
+
+      <i class="fas fa-times close-otp"></i>
+      <div class="parentLogin">
+        <div class="first-otp">
+          <input type="text" id="o1" class="otpNum" />
+        </div>
+        <div class="first-otp">
+          <input type="text" id="o2" class="otpNum" />
+        </div>
+        <div class="first-otp">
+          <input type="text" id="o3" class="otpNum" />
+        </div>
+        <div class="first-otp">
+          <input type="text" id="o4" class="otpNum" />
+        </div>
+
+      </div>
+      <div class="second-otp">
+        <div class="btnLogin"><a href="./index.html"><button id="verify">VERIFY</button></div></a>
+        <h3 id="otp_message2"></h3>
+        <h4>Resend OTP</h4>
+        <h3>Change Phone Number</h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+  let data = JSON.parse(localStorage.getItem("data"));
+  console.log(data);
+  document
+    .getElementById("loginBtnToLog")
+    .addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    });
+
+  document.querySelector(".close").addEventListener("click", function () {
+    document.querySelector(".popup").style.display = "none";
+  });
+
+  // otp ===============================================================
+  let otp = [];
+  document.getElementById("next").addEventListener("click", function () {
+    let mobile = document.getElementById("login_number").value;
+    data.map(function (user) {
+      if (user.mobile == mobile) {
+        let otp_message = document.getElementById("otp_message");
+        otp_message.innerHTML = "OTP Is Sending....";
+        otp_message.style.color = "green";
+        setTimeout(function () {
+          let otp_n = {
+            otp_number: 87654321,
+          };
+          otp.push(otp_n);
+          localStorage.setItem("otp", JSON.stringify(otp));
+          document.getElementById("popup-otp").style.display = "flex";
+        }, 2000);
+      } else {
+        let otp_message = document.getElementById("otp_message");
+        otp_message.innerHTML = "Plz Enter Correct Mobile Number";
+        otp_message.style.color = "red";
+      }
+    });
+  });
+
+  document.querySelector(".close-otp").addEventListener("click", function () {
+    document.querySelector(".popup").style.display = "none";
+    document.getElementById("popup-otp").style.display = "none";
+    console.log("moin");
+  });
+
+  ///enter otp here
+  let otp_Nums = JSON.parse(localStorage.getItem("otp"));
+  let otp_number = "";
+  document.getElementById("verify").addEventListener("click", function () {
+    let o1 = document.getElementById("o1").value;
+    otp_number = otp_number + o1;
+    let o2 = document.getElementById("o2").value;
+    otp_number = otp_number + o2;
+
+    let o3 = document.getElementById("o3").value;
+    otp_number = otp_number + o3;
+
+    let o4 = document.getElementById("o4").value;
+    otp_number = otp_number + o4;
+
+    let o5 = document.getElementById("o5").value;
+    otp_number = otp_number + o5;
+
+    let o6 = document.getElementById("o6").value;
+    otp_number = otp_number + o6;
+
+    let o7 = document.getElementById("o7").value;
+    otp_number = otp_number + o7;
+
+    let o8 = document.getElementById("o8").value;
+    otp_number = otp_number + o8;
+
+    otp_Nums.map(function (otp) {
+      if (otp.otp_number == +otp_number) {
+        let otp_message = document.getElementById("otp_message2");
+        otp_message.innerHTML = "Verifying Pls Wait...";
+        otp_message.style.color = "green";
+        setTimeout(function () {
+          window.location.href = "checkout.html";
+        }, 2000);
+      } else {
+        let otp_message = document.getElementById("otp_message2");
+        otp_message.innerHTML = "Pls Enter Correct OTP";
+        otp_message.style.color = "red";
+      }
+    });
+  });
+
+
+</script>

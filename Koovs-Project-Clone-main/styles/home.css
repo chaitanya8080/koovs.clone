@@ -1,0 +1,71 @@
+/* .............header...... */
+#main {
+  display: flex;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 100px;
+  gap: 0px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  /* position: static; */
+}
+#logo {
+  margin-left: 650px;
+  flex-wrap: row;
+}
+#icon {
+  display: flex;
+  gap: 20px;
+  margin-left: 290px;
+  color: gray;
+  font-size: 26px;
+  flex-direction: row;
+}
+i {
+  color: gray;
+}
+#nav1 {
+  display: flex;
+  border: 1px solid none;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: row;
+  margin-top: -42px;
+}
+#txt:hover {
+  border-bottom: 3px solid black;
+}
+a {
+  text-decoration: none;
+}
+#txt {
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+/* .............header...... */
+
+/* ...........bootstrap......... */
+#carouselExampleControls {
+  border: none;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  flex-wrap: row;
+}
+/* ..................bootsrap.......... */
+
+/* ...........images........... */
+#grab {
+  border: 1px solid none;
+
+  width: 75%;
+  margin: 0;
+  margin-left: 153px;
+  margin-top: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+/* ...............images...... */

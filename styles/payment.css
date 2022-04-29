@@ -1,0 +1,219 @@
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  color: #393939;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  flex: 5.6;
+}
+.right {
+  flex: 4.4;
+
+  background-color: #fafafa;
+  border-left: 1px solid gainsboro;
+}
+.prod img {
+  height: 64px;
+}
+.imgdiv {
+  border: 1px solid gainsboro;
+  width: 64px;
+  text-align: center;
+  border-radius: 10px;
+}
+.maindiv {
+  display: flex;
+}
+.namedetaildiv p {
+  margin: 0px;
+}
+.namedetaildiv h4 {
+  margin: 0px;
+}
+.namedetaildiv {
+  margin-left: 10px;
+  width: 65%;
+}
+.inside {
+  margin-left: 8%;
+  margin-top: 10vh;
+  width: 75%;
+}
+.inside div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+#discount input {
+  width: 70%;
+  height: 4vh;
+  padding: 5px 10px;
+}
+
+#discount button {
+  padding: 10px 24px;
+}
+#discount {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+#net {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+#kooImg img {
+  width: 170px;
+
+  margin-left: 11%;
+}
+.insidel {
+  width: 75%;
+  margin-left: 15.5%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 11px;
+  position: relative;
+  bottom: 2px;
+  color: blue;
+}
+#pages {
+  position: relative;
+  bottom: 20px;
+}
+#cont {
+  margin-top: -15px;
+}
+
+#butts {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+#butts p {
+  display: inline;
+  font-size: 12px;
+  color: blue;
+}
+#butts button {
+  padding: 18px 25px;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+#reserve {
+  margin-top: 5vh;
+  padding: 10px 0px;
+  font-size: 11px;
+  border-top: 1px solid gainsboro;
+}
+.div1 {
+  width: 94%;
+  display: flex;
+  flex-grow: 1;
+  gap: 30px;
+  border: 1px solid gainsboro;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.div2 {
+  width: 94%;
+  display: flex;
+
+  gap: 7px;
+  border: 1px solid gainsboro;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#std {
+  width: 72%;
+  margin-left: 5.2%;
+}
+#card img {
+  width: 350px;
+}
+#billing {
+  width: 94%;
+
+  border: 1px solid gainsboro;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 5px;
+}
+#diff {
+  width: 94%;
+
+  border: 1px solid gainsboro;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.bottomvars {
+  width: 100%;
+  height: 350px;
+
+  border: 1px solid transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "Email Email"
+    "Fname Lname"
+    "comp comp"
+    "Address Address"
+    "Add2 PC"
+    "City Region"
+    "Phone Phone";
+}
+.bottomvars > input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+
+#againadd {
+  padding: 3%;
+  background-color: #fafafa;
+  border: 1px solid gainsboro;
+  display: none;
+}
+#gotoship:hover {
+  background-color: gray;
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  #reserve {
+    display: none;
+  }
+  #kooImg img {
+    width: 170px;
+
+    margin-left: 3%;
+  }
+  .insidel {
+    width: 75%;
+    margin-left: 9%;
+  }
+}

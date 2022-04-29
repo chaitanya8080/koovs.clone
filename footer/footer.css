@@ -1,0 +1,51 @@
+.foot {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+.foot-column {
+  margin-top: 10px;
+  flex-basis: 250px;
+  padding: 1px;
+}
+.head {
+  font-size: 15px;
+  font-weight: 700;
+}
+.foot ul {
+  list-style-type: none;
+  text-align: start;
+}
+.foot ul > li:first-child {
+  margin-bottom: 20px;
+}
+.foot ul > li {
+  padding: 3px;
+  font-size: 14px;
+}
+.foot-column li:hover,
+.base-footer > span {
+  cursor: pointer;
+}
+.mail::before {
+  font-family: "Material Icons";
+  content: "\e0e1";
+  display: inline-block;
+  padding-right: 5px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.app-store img {
+  display: block;
+  width: 90%;
+  margin-top: 10px;
+}
+.base-footer {
+  text-align: center;
+  padding: 1.5%;
+}
+#head ul > li {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/shipping.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div id="kooImg">
+          <img src="./images/koovs logo.jpg" alt="logo" />
+        </div>
+        <div class="insidel">
+          <div id="pages">
+            <p>
+              <a href="./cart.html">Cart</a> >
+              <a href="./checkout.html">Information</a> >
+              <a href="./shipping.html"
+                ><strong style="color: black">Shipping</strong></a
+              >
+              > <a href="./payment.html">Payment</a>
+            </p>
+          </div>
+          <div class="bottomvar">
+            <div class="div1">
+              <span>Contact</span
+              ><span id="email" style="flex-grow: 3">chandankrbit3</span
+              ><span style="font-size: 11px; color: blue">Change</span>
+            </div>
+            <div class="div1">
+              <span style="width: 54px">Ship to</span
+              ><span id="address" style="flex-grow: 3">Address</span
+              ><span style="font-size: 11px; color: blue">Change</span>
+            </div>
+            <p>Shipping method</p>
+            <div id="div2">
+              <p>Standard Shipping</p>
+              <p>₹ 99</p>
+            </div>
+          </div>
+
+          <div id="butts">
+            <a href="./checkout.html"
+              ><p style="position: relative; top: 30px">
+                Return to Information
+              </p></a
+            >
+            <a href="./payment.html">
+              <button id="gotoship">Continue to Payment</button></a
+            >
+          </div>
+          <div id="reserve">
+            <div>All rights reserved Koovs</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inside">
+          <div class="prod"></div>
+          <hr />
+          <div id="discount">
+            <input type="text" placeholder="Gift card or discount card" />
+            <button>Apply</button>
+          </div>
+          <hr />
+          <div style="display: flex; justify-content: space-between">
+            <div>Subtotal</div>
+            <div id="sum"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between">
+            <div>Shipping</div>
+            <div>₹ 99</div>
+          </div>
+          <hr />
+          <div style="display: flex; justify-content: space-between">
+            <div style="margin-top: 10px">Total</div>
+            <div id="net"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/shipping.js"></script>

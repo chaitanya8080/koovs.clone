@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/dfa13a6531.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+<style>
+  .container {
+    width: 40%;
+
+    border: 1px solid red;
+    border: 1px solid rgba(99, 99, 99, 0.2);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    margin: auto;
+  }
+
+  label {
+    font-size: 20px;
+    margin-left: -281px;
+    color: rgb(88, 88, 88);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .container_child {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .css {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 3px;
+  }
+
+  .css2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 3px;
+  }
+
+  .inputs {
+    width: 62%;
+    margin: auto;
+    height: 30px;
+    border: 1px solid rgb(199, 199, 199);
+  }
+
+  .mobile {
+    margin-left: -318px;
+  }
+
+  .pass {
+    margin-left: -300px;
+  }
+
+  .inputs:focus {
+    outline-color: rgb(0, 207, 0);
+    outline-style: double;
+  }
+
+  .log_p {
+    color: red;
+    font-size: 20px;
+    margin-top: -33px;
+    margin-left: 220px;
+  }
+
+  h1 {
+    color: rgb(92, 92, 92);
+  }
+
+  h2 {
+    color: rgb(92, 92, 92);
+  }
+
+  h3 {
+    color: rgb(92, 92, 92);
+  }
+
+  #buttonSign_up {
+    width: 230px;
+    height: 33px;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+    border: 1px solid rgba(34, 34, 34, 0.2);
+    box-shadow: rgba(46, 46, 46, 0.2) 0px 2px 8px 0px;
+  }
+
+  #buttonSign_up>a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
+<body>
+  <!-- header -->
+  <div id="main">
+    <a href="index.html"><img id="logo"
+        src="https://cdn.shopify.com/s/files/1/0584/9399/3141/files/logo_240x.png?v=1627043663" /></a>
+    <div id="icon">
+      <a href=""><i class="fas fa-search"></i></a>
+      <a href="signin.html"><i class="far fa-user-circle"></i></a>
+      <a href=""><i class="far fa-heart"></i></a>
+      <a href=""><i class="fas fa-shopping-bag"></i></a>
+    </div>
+  </div>
+  <div id="nav1">
+    <a href="product.html">
+      <p1 id="txt">MEN</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">WOMEN</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">THE BLOG</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">KOOVSXYOU</p1>
+    </a>
+    <a href="">
+      <p1 id="txt">IN STYLE OF</p1>
+    </a>
+  </div>
+  <!-- .............header......  -->
+
+  <div class="container">
+    <h1>sign Up</h1>
+    <h2>Sign up to get access to exciting offers and promotions</h2>
+    <hr />
+    <div class="container_child">
+      <div class="css">
+        <label> First Name : </label>
+        <input class="inputs" type="text" placeholder=" Eneter Your First Name " id="first_name" />
+        <p class="log_p" id="input_first"></p>
+      </div>
+      <div class="css">
+        <label> Last Name :</label>
+        <input class="inputs" type="text" placeholder="Enter Your Last Name " id="last_name" />
+        <p class="log_p" id="input_last"></p>
+      </div>
+      <div class="css">
+        <label class="mobile">Email : </label>
+        <input class="inputs" type="text" placeholder="Enter Your Email " id="email" />
+        <p class="log_p" id="input_email"></p>
+      </div>
+      <div class="css">
+        <label class="pass"> Password : </label>
+        <input class="inputs" type="password" placeholder="Enter Your Password " id="password" />
+        <p class="log_p" id="input_password"></p>
+      </div>
+      <div class="css">
+        <label class="mobile"> Mobile : </label>
+        <input class="inputs" type="number" placeholder="Enter Your  Mobile" id="mobile" />
+        <p class="log_p" id="input_mobile"></p>
+      </div>
+      <br />
+      <br />
+      <div class="css2">
+        <button id="buttonSign_up"><a href="#">Sign Up</a></button>
+        <h3 class="color">Already have an account? Sign In</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+  let data = []
+  document
+    .getElementById("buttonSign_up")
+    .addEventListener("click", createAccount);
+
+  function createAccount() {
+    let first_name = document.getElementById("first_name").value;
+    //   console.log('first_name', first_name);
+    let last_name = document.getElementById("last_name").value;
+    //   console.log('last_name', last_name);
+    let email = document.getElementById("email").value;
+    //   console.log('email', email);
+    let password = document.getElementById("password").value;
+    //   console.log('password', password);
+    let mobile = document.getElementById("mobile").value;
+    //   console.log('mobile', mobile);
+
+    if (first_name == "") {
+      document.getElementById("input_first").innerHTML = "Pls Enter first name";
+    }
+    if (last_name == "") {
+      document.getElementById("input_last").innerHTML = "Pls Enter last name";
+    }
+    if (email == "") {
+      document.getElementById("input_email").innerHTML = "Pls Enter email";
+    }
+    if (password == "") {
+      document.getElementById("input_password").innerHTML =
+        "Pls Enter passwprd";
+    }
+    if (mobile == "") {
+      document.getElementById("input_mobile").innerHTML = "Pls Enter mobile";
+    } else {
+      let user = {
+        first_name: first_name,
+        last_name: last_name,
+        email: email,
+        password: password,
+        mobile: mobile,
+      };
+      data.push(user);
+      localStorage.setItem("data", JSON.stringify(data));
+      window.location.href = "00_login_home.html";
+    }
+    document.getElementById("first_name").value = "";
+    document.getElementById("last_name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("mobile").value = "";
+  }
+</script>
